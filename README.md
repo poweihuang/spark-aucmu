@@ -20,6 +20,8 @@ Example Usage:
     from pyspark.ml.classification import RandomForestClassifier
     from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 
+    data = spark.createDataFrame(pd.read_csv('iris.csv', header=0,\
+    names=['sepal_length','sepal_width','petal_width','petal_length','variety']))
     inputCols = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
     vecAssembler = VectorAssembler(inputCols=inputCols, outputCol="features")
     va = vecAssembler.transform(data)
