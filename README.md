@@ -1,5 +1,5 @@
 # spark-AUCμ
-AUCμ is a performance matric for multi-class classification models and it is an extension of the standard two-class area under the receiver operating characteristic curve (AUC-ROC) written by Ross Kleiman. **This repo produced the origin sourcecode of AUCμ from python local version to distributed machine on Apache Spark**.
+AUCμ is a performance matric for multi-class classification models and it is an extension of the standard two-class area under the receiver operating characteristic curve (AUC-ROC) written by Ross Kleiman. **This repo produced the origin source code of AUCμ from python local version to distributed machine on Apache Spark**.
 
 # Getting Started
 These instructions provide the matric on distributed machine for development and testing purpose.
@@ -33,6 +33,8 @@ Example Usage:
     model = rf.fit(trainData)
     predictions = model.transform(testData)
     
+    # Input transformed dataframe, true label column and predicted probability column to get the matric directory.
+    # A and W are optional parameters to control the costs of partition matrix and skew data punishment coefficient.
     auc_mu = pyspark_auc_mu(predictions, "variety_index", "probability", A=None, W=None)
     >>>0.8333333333333333
     
