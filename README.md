@@ -33,7 +33,7 @@ Example Usage:
     model = rf.fit(trainData)
     predictions = model.transform(testData)
     
-    # Input transformed dataframe, true label column and predicted probability column to get the matric directory.
+    # Input transformed dataframe, true label column and predicted probability column to get the matric directly.
     # A and W are optional parameters to control the costs of partition matrix and skew data punishment coefficient.
     auc_mu = pyspark_auc_mu(predictions, "variety_index", "probability", A=None, W=None)
     >>>0.8333333333333333
