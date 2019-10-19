@@ -41,7 +41,7 @@ Example Usage:
 Additional information regarding use of an alternative partition matrix or weight matrix is contained in the auc_mu.auc_mu Docstring.
 
 # Authors
-* PoWeiHuang
+* PoWeiHuang@Cathay Financial Holdings Lab
 
 # Reference
 * [AUCµ: A Performance Metric for Multi-Class Machine Learning Models](http://proceedings.mlr.press/v97/kleiman19a/kleiman19a.pdf)
