@@ -12,7 +12,7 @@ __credits__ = ["PoWeiHuang"]
 __license__ = "MIT"
 __version__ = "1.0"
 __maintainer__ = "PoWeiHuang"
-__email__ = "pwhuang81@gmail.com"
+__email__ = "poweihuang@cathayholdings.com.tw"
 __status__ = "Production"
 
 import numpy as np
